@@ -25,6 +25,7 @@ min_x_coordinate = 90
 max_x_coordinate = 400
 min_y_coordinate = 40
 max_y_coordinate = 130
+
 while True:
     frame_read = me.get_frame_read()
     frame = frame_read.frame
@@ -64,15 +65,6 @@ while True:
 
     else:
         up_down_velocity = 0
-
-
-
-
-
-
-
-
-
 
     if hands and 0.2 < hands[0]['bbox'][2]/hands[0]['bbox'][3]<0.55 \
             and (hands[0]['type'] == 'Right'):
